@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "C:\Users\Zahidul Haque\OneDrive\Desktop\TESTNG/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Suite">
+  <test name= "Chrome browser Test">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="com.testng.test.CrossBrowserTesting"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name= "Edge browser Test">
+  <parameter name="browser" value="Edge"></parameter>
+    <classes>
+      <class name="com.testng.test.CrossBrowserTesting"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name= "firefox browser Test">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.testng.test.CrossBrowserTesting"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
